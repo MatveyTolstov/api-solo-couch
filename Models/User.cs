@@ -29,10 +29,17 @@ namespace SoloCoachApi.Models
         [Required]
         public string Email { get; set; } = null!;
 
-        [ForeignKey("role_id")]
         [Column("role_id")]
         [Required]
         public int RoleId { get; set; }
-        public virtual Role Role { get; set; }
+
+        [ForeignKey(nameof(RoleId))]
+        public virtual Role Role { get; set; } = null!;
+
+        [Column("metrics_user_id")]
+        public int? MetricsUserId { get; set; }
+
+        [ForeignKey(nameof(MetricsUserId))]
+        public virtual MetricsUser? MetricsUser { get; set; }
     }
 }

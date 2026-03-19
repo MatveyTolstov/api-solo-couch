@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SoloCoachApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4396b982529cdd074d6b07deebeae46f4c19106a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+393e1a14c3993d522b5b953f1eff6d9dc21963b7")]
 [assembly: System.Reflection.AssemblyProductAttribute("SoloCoachApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SoloCoachApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

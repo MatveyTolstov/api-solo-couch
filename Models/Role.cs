@@ -8,7 +8,7 @@ namespace SoloCoachApi.Models
     {
         [Key]
         [Column("id_role")]
-        public int IdRoles { get; set; }
+        public int IdRole { get; set; }
         [Column("role_name")]
         [MaxLength(50)]
         public required string RoleName { get; set; }

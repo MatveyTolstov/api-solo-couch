@@ -1,4 +1,17 @@
+using Microsoft.EntityFrameworkCore;
+using SoloCoachApi.DataBase;
+using SoloCoachApi.Extensions;
+
 var builder = WebApplication.CreateBuilder(args);
+
+var connectionStrings = builder.Configuration.GetConnectionString("DefaultConnection");
+
+builder.Services.AddDbContext<ApplicationContext>(options =>
+{
+    options.UseNpgsql(connectionStrings);
+});
+
+builder.Services.AddProjectDependencies();
 
 // Add services to the container.
 
